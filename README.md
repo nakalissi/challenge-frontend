@@ -1,4 +1,6 @@
-# Desafio Front-End da Concrete Solutions
+![RoutEasy Pretty Logo](http://app.routeasy.com.br/lib/landing/img/routeasy-horizontal_180.png)
+
+# Desafio Front-End da RoutEasy
 
 **Proposta:**  
 Implementar uma aplicação client-side, que consulte a API do GitHub e mostre os repositórios mais populares de um determinado usuário. Esta aplicação deve funcionar nos navegadores mais recentes do mercado.
@@ -16,11 +18,12 @@ Implementar uma aplicação client-side, que consulte a API do GitHub e mostre o
 ### **Definição de Pronto** ###
 
 * O layout deve ser responsivo para dispositivos com a resolução no mínimo de 320 x 480;
-* Não é obrigatório o uso de um framework, mas recomendamos [React.js](https://facebook.github.io/react/), [Angular](https://angular.io/) ou [Vue.js](https://vuejs.org/).
+* É obrigatório o uso de AngularJS (1.x).
 * É obrigatório o uso de rotas.
 
 ### **Critérios de Avaliação** ###
 
+* Pré-processadores de CSS: É opcional, mas conta pontos se estiver utilizando SASS.
 * Organização do projeto: Avalia a estrutura do projeto, documentação e uso de controle de versão;
 * Inovação tecnológica: Avalia o uso de tecnologias mais recentes, desde que estáveis;
 * Coerência: Avalia se os requisitos foram atendidos;
@@ -37,7 +40,7 @@ As APIs a serem consumidas são:
 
 ### **Processo de submissão** ###
 
-O desafio deve ser entregue pelo [GitHub](http://github.com/). A aplicação deve estar hospedada ([Heroku](https://www.heroku.com/), [Firebase](https://www.firebase.com/), [Plunker](https://plnkr.co/), etc) As URLs deve ser enviada por email.
+O desafio deve ser entregue pelo [GitHub](http://github.com/). A aplicação deve estar hospedada ([Heroku](https://www.heroku.com/), [Firebase](https://www.firebase.com/), [Plunker](https://plnkr.co/), etc) As URLs deve ser enviadas por e-mail para william.kennedy@routeasy.com.br.
 
 Qualquer dúvida em relação ao desafio, responderemos por e-mail.
 
