@@ -1,0 +1,203 @@
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+// Reset browser default style
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  background-color: #EEEEEE;
+}
+
+$grey: lighten(black,30%);
+
+/*============================================================================
+  Dependency-free breakpoint mixin
+    - http://blog.grayghostvisuals.com/sass/sass-media-query-mixin/
+==============================================================================*/
+$small: 320px;
+$medium: 768px;
+$large: 769px;
+$min: min-width;
+$max: max-width;
+@mixin at-query ($constraint, $viewport1, $viewport2:null) {
+  @if $constraint == $min {
+    @media screen and ($min: $viewport1) {
+      @content;
+    }
+  } @else if $constraint == $max {
+    @media screen and ($max: $viewport1) {
+      @content;
+    }
+  } @else {
+    @media screen and ($min: $viewport1) and ($max: $viewport2) {
+      @content;
+    }
+  }
+}
+
+.navbar-brand{
+  padding: 8px 14px;
+  img {
+    width: 70%;
+  }
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: #EEEEEE;
+}
+
+.tabs {
+  margin-top: 14px;
+}
+
+.map-canvas{
+  width: 100%;
+  min-height: 500px;
+  margin: 20px 0;
+  @include at-query($max,$small){
+    margin: 10px 0;
+  }
+}
+
+.btn-group {
+  width: 100%;
+  .btn {
+    display: block;
+  }
+}
+
+.container-fluid{
+  min-width: $small;
+  transition: all 1s;
+}
+
+.jumbotron {
+  h2 {
+    margin-top: 40px;
+  }
+}
+
+.form-group,
+.alert{
+  margin-top: 15px;
+}
+
+.user{
+  &.picture{
+    width: auto;
+    margin-bottom: 10px;
+    @include at-query($max, $small){
+      margin: 0 auto;
+    }
+    img {
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+    }
+  }
+  .badge {
+    margin-bottom: 3px;
+  }
+  .description{
+    margin-top: 5px;
+    font-size: .9em;
+    p{
+      margin-bottom: 5px;
+    }
+    .glyphicon{
+      color: $grey;
+    }
+  }
+}
+
+.list-group-item {
+  background-color: transparent;
+}
+
+.badge{
+  a {
+    color: white;
+  }
+  &.badge-error {
+  background-color: #b94a48;
+  }
+  &.badge-error:hover {
+    background-color: #953b39;
+  }
+  &.badge-warning {
+    background-color: #f89406;
+  }
+  &.badge-warning:hover {
+    background-color: #c67605;
+  }
+  &.badge-success {
+    background-color: #468847;
+  }
+  &.badge-success:hover {
+    background-color: #356635;
+  }
+  &.badge-info {
+    background-color: #3a87ad;
+  }
+  &.badge-info:hover {
+    background-color: #2d6987;
+  }
+  &.badge-inverse {
+    background-color: #333333;
+  }
+  &.badge-inverse:hover {
+    background-color: #1a1a1a;
+  }
+}
+
+.media{
+  .pull-left{
+    .media-object{
+      max-width: 80px;
+      height: auto;
+    }
+  }
+}
+
+.followers {
+  margin-top: 25px;
+  .media{
+    margin-bottom: 15px;
+  }
+}
+
+.pull-right {
+  clear: both;
+}
+
+.form-group,
+.navbar-form {
+  margin: 7px 0;
+}
+
+.dropdown {
+  margin-top: -8px;
+}
+
+footer{
+  margin: 20px 0;
+}
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

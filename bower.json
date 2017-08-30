@@ -1,0 +1,36 @@
+{
+  "name": "routeasy-challenge",
+  "description": "Github API App",
+  "main": [
+    "components/index.module.js",
+    "assets/css/style.css"
+  ],
+  "authors": [
+    "Daniel Calissi Nakatate"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nakalissi/challenge-frontend"
+  },
+  "homepage": "https://github.com/nakalissi/challenge-frontend.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "angular": "~1.4.0",
+    "angular-route": "~1.3.18",
+    "angular-animate": "1.4.5",
+    "angular-loading-bar": "~0.8.0",
+    "bootstrap": "3.2",
+    "angular-bootstrap": "^2.5.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.0"
+  }
+}

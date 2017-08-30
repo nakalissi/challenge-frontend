@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row jumbotron">
+    <div class="col-sm-12">
+      <div class="logo text-center">
+        <img ng-src="http://app.routeasy.com.br/lib/landing/img/routeasy-horizontal_180.png" alt="">
+      </div>
+      <h2 class="text-center">Digite o usuário do Github.</h2>
+      <form name="search" ng-submit="searchUser(inputuser)">
+        <div class="input-group text-center">
+          <input type="text" name="field"  placeholder="Buscar Usuário" class="form-control input-lg"
+            ng-model="inputuser"
+            required>
+          <div class="input-group-btn">
+            <button type="submit" name="submit" class="btn btn-primary btn-lg" ng-disabled="search.$invalid">Buscar</button>
+          </div>
+        </div>
+        <div class="alert alert-danger" ng-show="search.field.$error.required && !search.field.$pristine">
+          <i class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></i>
+          Campo obrigatório!
+        </div>
+        <div class="alert alert-danger" ng-show="message.status">
+          <i class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></i>
+          {{message.content}}
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</div>
